@@ -1,11 +1,12 @@
 import sys
 import time
 import zmq
+import toml
 
-from put import put
-from get import get
-from subscribe import subscribe
-from unsubscribe import unsubscribe
+from operations import put
+from operations import get
+from operations import subscribe
+from operations import unsubscribe
 
 operation = sys.argv[1]
 topic = sys.argv[2]
